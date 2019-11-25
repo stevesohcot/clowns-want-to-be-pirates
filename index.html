@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0"/>
+<title>Clowns Want To Be Pirates</title>
+<link href="css/stylesheet.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/animate_modified.css">
+</head>
+<body>
+
+<div id="container" class="maincontainer">
+
+  <!-- board goes here -->
+
+  <section id="how_to_play" class="wrap">
+    <section class="content">
+      <section class="heading-txt">
+        <img src="images/logo_clown_pirate.png" width="240" height="148" alt="Clowns Want To Be Pirates" />
+      </section> 
+
+       <section class="move-ship">
+        <div class="imgwrap">Navigate <img src="images/hero.png" width="66" height="66" alt="ship" style="vertical-align: middle;" /></div>
+        <div class="move-instructions"> 
+          <span style="font-weight:bold">Swipe</span> up, down, left, or right
+        </div>
+      </section>
+
+      <section class="leftSection">
+        <aside class="txt wow bounceIn" data-wow-delay="0.1s">Get</aside>
+        <a class="imgWrap wow bounceInLeft" data-wow-delay="0.1s" data-wow-offset="50"><img src="images/raft_clown_01.png" alt="clown" width="50" height="55" /></a>
+      </section>
+    
+      <section class="rightSection">
+        <aside class="txt wow bounceIn" data-wow-delay="0.8s">Avoid</aside>
+        <a class="imgWrap wow bounceInRight" data-wow-delay="0.8s" data-wow-offset="50"><img src="images/raft_bomb.png" alt="bomb" width="50" height="55" /></a>
+      </section>
+
+      <section class="clear"></section>
+ 
+      <section class="btnCont">
+        <a onclick="GameStart();" title="play button" class="primaryBtn wow rubberBand" data-wow-offset="50" data-wow-delay="0.3s"><span class="iconTxt">Play</span></a>
+      </section>
+    </section>
+  </section>
+
+ <section id="game_over" style="display:none;" class="wrap">
+
+  <section class="content"> 
+
+    <section class="heading-txt">
+      <h1>Game Over</h1>
+    </section> 
+
+    <div class="gridCont">
+      <p>Score: <span id="your_score"></span></p>
+      <br />
+      <p>High Score: <span id="previous_high_score"></span></p>
+      <div id="new_high_score" style="display:none;">This is a new high score!</div>
+    </div>
+    <div class="clear"></div>
+
+    <section class="btnCont">
+      <a onclick="GameReset();" title="Play Again" class="primaryBtn ww rubberBand" data-wow-offset="200" data-wow-delay=".3s"><span class="iconTxt">Play Again</span></a>
+    </section>
+
+  </section>
+
+</section>
+
+
+  <section class="clear"></section>
+
+  	<div id="advertisement" style="display:none;" align="center">
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4514868549482454"
+           data-ad-slot="9690590329"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+  <div id="current_stats" class="status">    
+    <table id="tblstats" width="99%" class="levels">
+      <tr>
+        <td width="24%">Level&nbsp;<span id="current_stats_level">1</span></td>
+        <td width="49%">Next Level&nbsp;<span id="current_stats_threshold">1/10</span></td>
+        <td width="17%">Total&nbsp;<span id="current_stats_total">5</span></td>
+        <td width="10%" valign="middle"><img src="images/icon_clown_01.png" width="32" height="32" alt="Total"></td>
+      </tr>
+    </table>
+  </div>
+</div> <!-- #container -->
+
+    <script type="text/javascript" src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/vendor/gameFramework_chp3.js"></script>
+    <script type="text/javascript" src="js/vendor/gameFramework_sound.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/retina.min.js"></script> 
+    <script type="text/javascript" src="js/wow.js"></script> 
+   
+</body>
+</html>
